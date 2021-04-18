@@ -1,0 +1,85 @@
+nstalling The Library
+The library homepage 
+In the commands below change the .XX to match the current library version number, e.g. ".37". 
+If you are using the GUI then open the command prompt using Menu > Other > LXTerminal 
+Using your RPi download the .tar.gz file from the library page to your "/home/pi/" root directory.  You can do this using wget on the command line: 
+cd /home/pi/ 
+wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.XX.tar.gz 
+Install the library files using the following commands 
+Unzip the downloaded file (Change the file version number to match your downloaded version) 
+tar zxvf bcm2835-1.XX.tar.gz
+The files will be unzipped into a folder called "/home/pi/bcm2835-#.#" where # is the version number. (The following instructions are based on the instructions in the bcm2835.h file so if something doesn't work check there to see if the instructions have changed) 
+Change to the directory the files we're unzipped into (Change the directory version number to match your downloaded version) 
+cd bcm2835-1.XX
+Run the configure exe 
+./configure
+Execute the makefile 
+make
+
+Then 
+sudo make check
+Then 
+sudo make install
+(The sudo is needed to elevate permissions to the root user) 
+The library is now ready to use. 
+Using the Library In A NetBeans Project
+Including the library header file 
+#include <bcm2835.h>
+When you compile you also need to include -lbcm2835 so the libraries object file is added to the final compilation. 
+Right click the project > Properties > Build > Linker > In the 'Libraries' section press the '…' button > Add Option… > Other Option > Enter: -lbcm2835 
+Using the Library In A Geany Project
+Including the library header file 
+#include <bcm2835.h>
+When you compile you also need to include -lbcm2835 so the libraries object file is added to the final compilation.
+For example at the command line: 
+gcc clk.c -o clk -lbcm2835
+In a simple makefile for a project with a single file called main.c: 
+
+all: output_file_name
+
+output_file_name: main.o
+	gcc main.o -lbcm2835 -o output_file_name
+
+main.o: main.c
+	gcc -c main.c
+
+clean:
+	rm -rf *o output_file_name
+Trying out an example project using the command line C compiler
+You can compile one of the examples using this: 
+
+cd examples/blink
+gcc -o blink -l rt blink.c -l bcm2835 
+and then run the blink exe with this command: 
+
+sudo ./blink
+If you connect the positive pin of a 5V LED to pin 11 of the P1 header it should be blinking. Use CTRL+Break or CTRL+SHIFT+C to stop the exe. 
+Problems With The Library
+DelayMicroseconds() is a handy function but if you use it a lot you'll find operation takes much longer than it should.  This is because the function allows the linux scheduler to know the process is sleeping and decide to move on to another process.  See here for a better solution if you need to avoid this. 
+Controlling Pins
+See the header file for all of the functions. 
+RPi1 Model B+ and RPi2 Model B
+
+//Setup
+bcm2835_gpio_fsel(RPI_BPLUS_GPIO_J8_40, BCM2835_GPIO_FSEL_INPT);		//RPI1B+ & RPi2B <<Set as input
+bcm2835_gpio_fsel(RPI_BPLUS_GPIO_J8_40, BCM2835_GPIO_FSEL_OUTP);		//RPI1B+ & RPi2B <<Set as output
+bcm2835_gpio_set_pud(RPI_BPLUS_GPIO_J8_40, BCM2835_GPIO_PUD_UP);		//RPI1B+ & RPi2B <<Set pull up
+
+//Outputs
+#define LED_GREEN(state)				bcm2835_gpio_write(RPI_BPLUS_GPIO_J8_40, !state)        //RPI1B+ & RPi2B
+
+//Inputs
+//bcm2835_gpio_lev returns uint8_t
+#define SW_A_INPUT						bcm2835_gpio_lev(RPI_BPLUS_GPIO_J8_40)                    //RPI1B+ & RPi2B
+RPi1 V2 (old)
+
+//Outputs
+#define LED_GREEN(state)				bcm2835_gpio_write(RPI_V2_GPIO_P1_24, !state)
+#define LED_YELLOW(state)				bcm2835_gpio_write(RPI_V2_GPIO_P1_26, !state)
+
+//Inputs
+//bcm2835_gpio_lev returns uint8_t
+#define SW_A_INPUT						bcm2835_gpio_lev(RPI_V2_GPIO_P1_03)
+Upgrading to a newer version of the library
+Just reinstall, no need to uninstall the old one.  
+ 
