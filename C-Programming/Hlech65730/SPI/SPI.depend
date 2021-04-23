@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1619176370 source:/home/pi/Repositories/Raspberry-Pi/C-Programming/Hlech65730/SPI/main.c
+	<bcm2835.h>
+	<stdlib.h>
+
