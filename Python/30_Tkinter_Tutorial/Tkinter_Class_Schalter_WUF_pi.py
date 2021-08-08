@@ -25,9 +25,9 @@ class Schalter(tk.Frame):
         tk.Frame.__init__(self, app_win)
         
         self.sqr_gry_arrow_red_img = tk.PhotoImage(
-            file="//home//pi//Desktop//Python//Rechteck_grau_mit_Pfeil_rot_klein.gif")
+            file="//home/pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Pfeil_rot_klein.gif")
         self.sqr_gry_circle_grn_img = tk.PhotoImage(
-            file="//home//pi//Desktop//Python//Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
+            file="//home/pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
                 
         radio_button_frame = tk.Frame(self)
         radio_button_frame.pack(side='left', expand=True)

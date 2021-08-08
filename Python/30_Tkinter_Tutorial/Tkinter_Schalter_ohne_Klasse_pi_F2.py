@@ -28,8 +28,8 @@ canvas_width = 40
 canvas_height = 40
 
 # Definition der Bilder 
-sqr_gry_arrow_red_img = tk.PhotoImage(file="//home//pi//Desktop//Python//Rechteck_grau_mit_Pfeil_rot_klein.gif")
-sqr_gry_circle_grn_img = tk.PhotoImage(file="//home//pi//Desktop//Python//Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
+sqr_gry_arrow_red_img = tk.PhotoImage(file="//home/pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Pfeil_rot_klein.gif")
+sqr_gry_circle_grn_img = tk.PhotoImage(file="//home/pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
 
 
 # Ueberschrifts Label 
@@ -42,65 +42,65 @@ tk.Label(root,
 def upper_radio_button_pressed_S1():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_arrow_red_img)
-	canvas.place(x = 150, y = 40, width=40, height=40)  
+	canvas.place(x = 160, y = 40, width=40, height=40)  
 def lower_radio_button_pressed_S1():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_circle_grn_img)
-	canvas.place(x = 150, y = 40, width=40, height=40)
+	canvas.place(x = 160, y = 40, width=40, height=40)
 #Schalter 2  
 def upper_radio_button_pressed_S2():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_arrow_red_img)
-	canvas.place(x = 150, y = 110, width=40, height=40)
+	canvas.place(x = 160, y = 110, width=40, height=40)
 def lower_radio_button_pressed_S2():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_circle_grn_img)
-	canvas.place(x = 150, y = 110, width=40, height=40)
+	canvas.place(x = 160, y = 110, width=40, height=40)
 #Schalter 3
 def upper_radio_button_pressed_S3():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_arrow_red_img)
-	canvas.place(x = 150, y = 180, width=40, height=40)
+	canvas.place(x = 160, y = 180, width=40, height=40)
 def lower_radio_button_pressed_S3():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_circle_grn_img)
-	canvas.place(x = 150, y = 180, width=40, height=40)
+	canvas.place(x = 160, y = 180, width=40, height=40)
 #Schalter 4
 def upper_radio_button_pressed_S4():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_arrow_red_img)
-	canvas.place(x = 150, y = 250, width=40, height=40)
+	canvas.place(x = 160, y = 250, width=40, height=40)
 def lower_radio_button_pressed_S4():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_circle_grn_img)
-	canvas.place(x = 150, y = 250, width=40, height=40)
+	canvas.place(x = 160, y = 250, width=40, height=40)
 #Schalter 5
 def upper_radio_button_pressed_S5():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_arrow_red_img)
-	canvas.place(x = 150, y = 320, width=40, height=40)
+	canvas.place(x = 160, y = 320, width=40, height=40)
 def lower_radio_button_pressed_S5():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_circle_grn_img)
-	canvas.place(x = 150, y = 320, width=40, height=40)
+	canvas.place(x = 160, y = 320, width=40, height=40)
 #Schalter 6
 def upper_radio_button_pressed_S6():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_arrow_red_img)
-	canvas.place(x = 150, y = 390, width=40, height=40)
+	canvas.place(x = 160, y = 390, width=40, height=40)
 def lower_radio_button_pressed_S6():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_circle_grn_img)
-	canvas.place(x = 150, y = 390, width=40, height=40)
+	canvas.place(x = 160, y = 390, width=40, height=40)
 #Schalter 7
 def upper_radio_button_pressed_S7():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_arrow_red_img)
-	canvas.place(x = 150, y = 460, width=40, height=40)  
+	canvas.place(x = 160, y = 460, width=40, height=40)  
 def lower_radio_button_pressed_S7():
 	canvas = tk.Canvas(root, width=canvas_width, height=canvas_height)
 	canvas.create_image(10,10, anchor='nw', image=sqr_gry_circle_grn_img)
-	canvas.place(x = 150, y = 460, width=40, height=40)
+	canvas.place(x = 160, y = 460, width=40, height=40)
 
 
 
