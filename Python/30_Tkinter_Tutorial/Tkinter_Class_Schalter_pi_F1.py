@@ -10,8 +10,8 @@ v = IntVar()
 canvas_width = 50
 canvas_height = 50
 	
-sqr_gry_arrow_red_img = PhotoImage(file="Rechteck_grau_mit_Pfeil_rot_klein.gif")
-sqr_gry_circle_grn_img = PhotoImage(file="Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
+sqr_gry_arrow_red_img = PhotoImage(file="//home/pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Pfeil_rot_klein.gif")
+sqr_gry_circle_grn_img = PhotoImage(file="//home/pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
 
 			
 			
