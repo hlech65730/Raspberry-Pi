@@ -1,9 +1,15 @@
 
-# Verwendung von Tkinter für die GPIO Ausgabe
+# Verwendung von Tkinter fuer die GPIO Ausgabe
 # Verwendung von Place
 
-#from Tkinter import * # Python 2
-from tkinter import * # Python 3
+try:
+    # Tkinter for Python 2.xx
+    from Tkinter import *
+except:
+    # Tkinter for Python 3.xx
+    from tkinter import *
+
+
 import RPi.GPIO as GPIO
 
 def upper_radio_button_pressed():
@@ -69,8 +75,8 @@ canvas = Canvas(root,
 		width=canvas_width, 
 		height=canvas_height)
 		
-sqr_gry_arrow_red_img = PhotoImage(file="/home/pi/Desktop/Python/Deb/30_Tkinter_Tutorial/pictures/Rechteck_grau_mit_Pfeil_rot_klein.gif")
-sqr_gry_circle_grn_img = PhotoImage(file="/home/pi/Desktop/Python/Deb/30_Tkinter_Tutorial/pictures/Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
+sqr_gry_arrow_red_img = PhotoImage(file="//home//pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Pfeil_rot_klein.gif")
+sqr_gry_circle_grn_img = PhotoImage(file="//home//pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_grau_mit_Kreis_durchstrichen_gruen_klein.gif")
 
 lower_radio_button_pressed()
 GPIO.output(12, GPIO.LOW)
