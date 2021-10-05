@@ -2,9 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.layout
+*.depend
+*.geany
 
 # C extensions
 *.so
+*.o
 
 # Distribution / packaging
 .Python
