@@ -1,6 +1,8 @@
 
-#include <bcm2835.h>
+#include "/etc/bcm2835-1.60/src/bcm2835.h"
+#include "/etc/bcm2835-1.60/src/bcm2835.c"
 #include <stdlib.h>
+#include <stdio.h>
 
 int main()
 {
