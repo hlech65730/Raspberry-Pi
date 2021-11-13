@@ -1,4 +1,4 @@
-# OS : Raspbian "Stretch"( Debian 9 )
+# OS : Raspbian "Buster"( Debian 10 )
 # Python 3.7
 # Erstes Fenster des Tkinter
 # aus https://www.python-kurs.eu/tkinter_labels.php
@@ -95,9 +95,9 @@ canvas.pack()
 
 
 #definition of picture blue_img 
-blue_img = tk.PhotoImage(file="//home//pi//Desktop//Python//Quadrat_gelb_mit Smilie.PPM")
+blue_img = tk.PhotoImage(file="//home//pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//30_PPM//Quadrat_gelb_mit Smilie.PPM")
 #definition of picture red_img 
-red_img = tk.PhotoImage(file="//home//pi//Desktop//Python//Rechteck_gelb_mit_Punkt_rot.gif")
+red_img = tk.PhotoImage(file="//home//pi//Repositories//Raspberry-Pi//Python//30_Tkinter_Tutorial//20_Pictures//20_Gif//Rechteck_gelb_mit_Punkt_rot.gif")
 
 
 # call of the class App with parameter root for the window
