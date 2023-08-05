@@ -28,11 +28,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=3
-FILE_NAME_0=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fpi%2FRepositories%2FRaspberry-Pi%2FPython%2F10_First_Try%2FFirst_main_Mac.py;0;4
-FILE_NAME_1=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fpi%2FRepositories%2FRaspberry-Pi%2FPython%2F10_First_Try%2FFirst_Try_Mac.py;0;4
-FILE_NAME_2=0;Python;0;EUTF-8;1;1;0;%2Fhome%2Fpi%2FRepositories%2FRaspberry-Pi%2FPython%2F10_First_Try%2FFirst_Try_with_comments_Mac.py;0;4
-FILE_NAME_3=100;None;0;EUTF-8;1;1;0;%2Fhome%2Fpi%2FRepositories%2FRaspberry-Pi%2FPython%2F10_First_Try%2Ftext.txt;0;4
+current_page=-1
 
 [VTE]
 last_dir=/home/pi
