@@ -41,7 +41,7 @@
 // ----------------------------------------------------------------------------
 
 #ifndef wxHAS_IMAGES_IN_RESOURCES
-    #include "../sample.xpm"
+    #include "sample.xpm"
 #endif
 
 #include "wx_small.xpm"
