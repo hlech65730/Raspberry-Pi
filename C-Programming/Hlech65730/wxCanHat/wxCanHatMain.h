@@ -15,6 +15,7 @@
 #endif
 
 #include "wxCanHatApp.h"
+#include <wx/textctrl.h>
 
 
 //#include <wx/button.h>
@@ -24,6 +25,8 @@ class MyFrame : public wxFrame
 {
 public:
     MyFrame();
+    wxTextCtrl *MainEditBox;
+    //wxMenuBar *MainMenu;
 
 private:
     void OnHello(wxCommandEvent& event);

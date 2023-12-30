@@ -20,11 +20,12 @@
 //helper functions
 enum
 {
-    ID_Hello = 1
+    ID_Hello = 1,
+    TEXT_Main = wxID_HIGHEST + 1 // declares an id which will be used to call our button
 };
 
 MyFrame::MyFrame()
-        : wxFrame(nullptr, wxID_ANY, "Hello World")
+        : wxFrame(nullptr, wxID_ANY, "CAN-HAT")
 {
     wxMenu *menuFile = new wxMenu;
     menuFile->Append(ID_Hello, "&Hello...\tCtrl+H",
@@ -42,12 +43,15 @@ MyFrame::MyFrame()
     SetMenuBar(menuBar);
 
     CreateStatusBar();
-    SetStatusText("Welcome to wxWidgets!");
+    SetStatusText("Input for CAN-HAT");
 
     Bind(wxEVT_MENU, &MyFrame::OnHello, this, ID_Hello);
     Bind(wxEVT_MENU, &MyFrame::OnAbout, this, wxID_ABOUT);
     Bind(wxEVT_MENU, &MyFrame::OnExit, this, wxID_EXIT);
 
+    // Initialize our text box with an id of TEXT_Main, and the label "hi"
+    MainEditBox = new wxTextCtrl(this, TEXT_Main, "Hi!", wxDefaultPosition, wxDefaultSize,
+    wxTE_MULTILINE | wxTE_RICH , wxDefaultValidator, wxTextCtrlNameStr);
 
 }
 
